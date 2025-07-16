@@ -1,0 +1,79 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: 'technoid';
+    src: url('/assets/fonts/TECHNOID.TTF');
+}
+
+@font-face {
+    font-family: 'terminal';
+    src: url('/assets/fonts/Terminal\ F4.ttf');
+}
+/*
+    NAVBAR
+*/
+.topnav {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.topnav ul {
+    padding: 0px;
+}
+.topnav li {
+    display: block;
+    float: left;
+    font-family: terminal;
+    font-size: 36px;
+    color: #effafa;
+}
+
+.topnav a {
+    padding: 10px;
+    text-decoration-line: none;
+    color: #effafa;
+}
+
+.topnav a:hover {
+    color: #e624af;
+}
+
+/*
+    BODY
+*/
+body {
+    margin: 0;
+    background-color: #0e0e0e;
+}
+
+.content {
+    display: block;
+    padding: 10px;
+    min-height: 200px;
+    border: 2px solid #e624af;
+    margin-top: 30px;
+    color: #effafa;
+    min-width: 1000px;
+    max-width: 1000px;
+    font-family: terminal;
+}
+
+.artcontent {
+    margin-top: 30px;
+    color: #e624af;
+    padding: 10px;
+    min-height: 200px;
+    margin-top: 30px;
+    min-width: 1000px;
+    max-width: 1000px;
+    text-align: center;
+}
