@@ -23,7 +23,7 @@
     NAVBAR
 */
 .topnav {
-    margin-top: 30px;
+    margin-top: 3vh;
     font-family: technoid;
     font-size: 2.5rem;
     padding: 0;
@@ -60,20 +60,37 @@ body {
     padding: 10px;
     min-height: 200px;
     border: 2px solid #e624af;
-    margin-top: 30px;
+    margin-top: 5vh;
     color: #effafa;
-    min-width: 100vh;
-    max-width: 100vh;
+    min-width: 1000px;
     font-family: terminal;
 }
 
-.artcontent {
-    margin-top: 30px;
+.content h2 {
+    color: #8888888a;
+}
+
+.content a {
+    font-size: 1.1em;
     color: #e624af;
-    padding: 10px;
+}
+
+.artcontent {
+    color: #e624af;
     min-height: 200px;
     margin-top: 30px;
     min-width: 1000px;
     max-width: 1000px;
+    text-align: center;
+}
+
+/*
+    FOOTER
+*/
+
+.footer {
+    font-family: terminal;
+    color: #effafa;
+    margin-top: 5vh;
     text-align: center;
 }
