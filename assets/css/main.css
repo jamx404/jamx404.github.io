@@ -19,6 +19,7 @@
     font-family: 'terminal';
     src: url('/assets/fonts/Terminal\ F4.ttf');
 }
+
 /*
     NAVBAR
 */
@@ -56,22 +57,20 @@ body {
 }
 
 .content {
-    display: block;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-height: 200px;
     border: 2px solid #e624af;
     margin-top: 5vh;
     color: #effafa;
     min-width: 1000px;
+    max-width: 1000px;
     font-family: terminal;
 }
 
-.content h2 {
-    color: #8888888a;
-}
-
 .content a {
-    font-size: 1.1em;
+    font-size: 0.6em;
     color: #e624af;
 }
 
@@ -79,21 +78,45 @@ body {
     color: #e624af;
     min-height: 200px;
     margin-top: 30px;
-    min-width: 1000px;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
+    font-family: terminal;
+}
+
+.right {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 /*
+    Content header
+*/
+
+.content > div.header {
+    width: 100%;
+    background-color: #e624af;
+    color: #effafa;
+
+}
+/*
     Profile Header
 */
 .pfp {
-    width: 50%;
     display: flex;
 }
 
 .pfp img{
+    margin: 0;
     padding-right: 8px;
     width: 160px;
     height: 160px;
