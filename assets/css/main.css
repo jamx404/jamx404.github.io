@@ -6,8 +6,7 @@
 
 .center {
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 @font-face {
@@ -53,6 +52,7 @@
 */
 body {
     margin: 0;
+    padding: 0;
     background-color: black;
 }
 
@@ -104,6 +104,7 @@ body {
 
 .content > div.header {
     width: 100%;
+    height: fit-content;
     background-color: #e624af;
     color: #effafa;
 
@@ -114,7 +115,9 @@ body {
 .pfp {
     display: flex;
 }
-
+.pfp table {
+    color: #effafa;
+}
 .pfp img{
     margin: 0;
     padding-right: 8px;
@@ -123,12 +126,71 @@ body {
 }
 
 /*
+    Latest blog
+*/
+.blog-latest td {
+    background-color: #e624af;
+    padding: 10px;
+}
+
+.blog-latest a {
+    font-size: 1.2em;
+    color: #effafa;
+    padding: 10px;
+}
+
+.blog-latest table {
+    width: 100%;
+}
+
+.blog-posts a {
+    font-size: 2em;
+
+}
+
+.blog-posts > li {
+    padding: 10px;
+}
+
+/*
+    Links
+*/
+.links {
+    margin-top: 20px;
+    border: #e624af 1px solid;
+}
+.links h2 {
+    background-color: #e624af;
+}
+
+.links li {
+    padding: 5px;
+}
+.links a {
+    font-size: 1em;
+}
+
+
+
+/*
+    Song of the Week
+*/
+.song-container a{
+    font-size: 1em;
+}
+.song-container {
+    border: #e624af80 1px double;
+    padding: 10px;
+    text-align: center;
+
+}
+/*
     FOOTER
 */
 
 .footer {
     font-family: terminal;
     color: #effafa;
-    margin-top: 5vh;
+    margin-top: 6vh;
     text-align: center;
 }

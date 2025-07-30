@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PRJCT:J4MX</title>
-        <meta name="descriptipn" content="[J4MX'S] CYBERBLOG">
-        <link rel="stylesheet" href="assets/css/main.css">
-    </head>
-
-    <body>
-            <nav class="topnav center">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li>/</li>
-                    <li><a href="#">bio</a></li>
-                    <li>/</li>
-                    <li><a href="#">blog</a></li>
-                    <li>/</li>
-                    <li><a href="#">stuff</a></li>
-                </ul>
-            </nav>
-
-            
+---
+layout: default
+title: home
+---
             <div class="artcontent center">
                 <p>
                 ⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>
@@ -49,7 +29,7 @@
                 <div class="right">
 
                     <div class="homeheader">
-                        <h2>J4MX <a href="#">[ bio ]</a></h2>
+                        <h2>J4MX <a href="bio.html">[ bio ]</a></h2>
                     </div>
 
                     <div class="pfp">
@@ -59,27 +39,56 @@
                                 <td>"Welcome to my corner of the interwebz!"</td>
                             </tr>
                             <tr>
-                                <td>Website last updated: 29/07/2025</td>
+                                <td>Website last updated: 30/07/2025</td>
                             </tr>
                         </table>
                     </div>
+                    
+                    
+
+                    <div class="feat-song">
+                        <br>
+                        <h2>Featured Song</h2>
+                            <div class="song-container">
+                            <p>[ <a href="https://www.youtube.com/watch?v=ITgslYJhfx0&" target="_blank">Deafheaven - "You Without End"</a> ]</p>
+                            <p>.ılılılllıılılıllllıılılllıllı.<br>
+                                0:24 ─●──────── -X:XX<Br>
+                                ↻      ◁ II ▷     ↺<br>
+                            </p>
+                            </div>
+                    </div>
+
+
                 </div>
 
                 <div class="left">
                     <div class="blog-preview">
-                        <h2>Latest blog! <a href="#">[ blog page ]</a></h2>
-                    </div>
+                        <h2>Latest blog entries! <a href="blog.html">[ blog page ]</a></h2>
 
-                    <div>
-                        <br>
-                        <P>NULL</p></P>
+                    </div>
+                    <div class="blog-latest">
+                        <table>
+                            {% for post in site.posts limit:3 %}
+                            <tr>
+                                <Td>
+                                    <p>
+                                        <a href="{{ post.url}}">{{ post.title }}</a>
+                                        {{ post.date | date: "%d/%m/%Y"}}
+                                    </p>
+                                </Td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    
+                                        <div class="links">
+                        <h2>/// Extra nav</h2>
+                        <ul>
+                            <li><a href="#">Placeholder</a></li>
+                            <li><a href="#">Placeholder</a></li>
+                            <li><a href="#">Placeholder</a></li>
+                            <li><a href="#">Placeholder</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="footer">
-                <p>[ 823,070,625 ]</p>
-                <p>© 2025, J4MX</p>
-            </div>
-    </body>
-</html>
