@@ -64,8 +64,8 @@ body {
     border: 2px solid #e624af;
     margin-top: 5vh;
     color: #effafa;
-    min-width: 1000px;
-    max-width: 1000px;
+    min-width: 950px;
+    max-width: 950px;
     font-family: terminal;
 }
 
@@ -149,9 +149,25 @@ body {
 }
 
 .blog-posts > li {
-    padding: 10px;
+    padding: 20px;
 }
 
+/*
+    Blog Content
+*/
+.blog-content {
+    padding: 10px;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+.blog-content small {
+    margin: 0;
+    padding: 0;
+}
+.blog-content p {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
 /*
     Links
 */
@@ -184,6 +200,26 @@ body {
     text-align: center;
 
 }
+
+/*
+    BIO
+*/
+.bio-content{
+    padding: 10px;
+}
+.bio-content a {
+    font-size: 1em;
+}
+
+.bio-content ul, .bio-content p, .bio-content table {
+    padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.bio-content td {
+    padding: 10px;
+}
 /*
     FOOTER
 */
@@ -193,4 +229,9 @@ body {
     color: #effafa;
     margin-top: 6vh;
     text-align: center;
+}
+
+.footer a {
+    color: #effafa;
+    font-size: 1em;
 }
