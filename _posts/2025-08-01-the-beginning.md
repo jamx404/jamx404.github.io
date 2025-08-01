@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The beginning!"
-date: 2025-07-30
+date: 2025-08-01
 ---
 
 <br>
